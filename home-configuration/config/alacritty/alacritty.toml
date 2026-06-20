@@ -1,0 +1,15 @@
+[window]
+dimensions = { columns = 100, lines = 25 }
+dynamic_title = true
+opacity = 0.98
+[font]
+normal = { family = "Iosevka Nerd Font Propo", style = "Regular" }
+size = 13.0
+[cursor]
+style = { shape = "Underline", blinking = "Off" }
+[colors]
+primary = { background = "#000000", foreground = "#e0e0e0" }
+cursor = { cursor = "#e0e0e0", text = "#121212" }
+selection = { background = "#e0e0e0", text = "#121212" }
+normal = { black = "#121212", red = "#d32f2f", green = "#4caf50", yellow = "#ffeb3b", blue = "#2196f3", magenta = "#9c27b0", cyan = "#00bcd4", white = "#e0e0e0" }
+bright = { black = "#757575", red = "#f44336", green = "#8bc34a", yellow = "#ffc107", blue = "#3f51b5", magenta = "#673ab7", cyan = "#009688", white = "#ffffff" }

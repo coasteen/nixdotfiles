@@ -1,0 +1,8 @@
+Config {
+       font = "xft:Iosevka Nerd Font-14",
+       bgColor = "#000000",
+       fgColor = "#ffffff",
+       position = TopW L 100,
+       commands = [ Run XMonadLog ],
+       template = "%XMonadLog%"
+       }

@@ -1,0 +1,61 @@
+* {
+    highlight: bold italic;
+    scrollbar: true;
+
+    base-bg:        #000000;
+    base-bg-soft:   #1a1a1a;
+    base-bg-alt:    #0d0d0d;
+    base-fg:        #f5f5f5;
+    base-fg-dim:    #808080;
+    accent:         #ffffff;
+    accent-light:   #e0e0e0;
+    accent-dark:    #4d4d4d;
+    border-gray:    #333333;
+
+    background:                  @base-bg;
+    background-color:            @background;
+    foreground:                  @base-fg;
+    border-color:                @border-gray;
+    separatorcolor:              @border-color;
+    scrollbar-handle:            @border-color;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @base-bg-soft;
+    alternate-normal-foreground: @foreground;
+
+    selected-normal-background:  @accent;
+    selected-normal-foreground:  @base-bg-alt;
+
+    active-background:           @accent;
+    active-foreground:           @base-bg-alt;
+    alternate-active-background: @accent;
+    alternate-active-foreground: @active-foreground;
+
+    selected-active-background:  @accent-light;
+    selected-active-foreground:  @active-foreground;
+
+    urgent-background:           @accent-dark;
+    urgent-foreground:           @base-bg-alt;
+    alternate-urgent-background: @accent-dark;
+    alternate-urgent-foreground: @urgent-foreground;
+
+    selected-urgent-background:  @accent-light;
+    selected-urgent-foreground:  @urgent-foreground;
+
+    padding: 6px 6px;
+}
+
+configuration {
+    font: "Iosevka Nerd Font Propo 14";
+    show-icons: true;
+    terminal: "alacritty";
+}
+
+element-icon {
+    size: 20px;
+}
+
+window {
+    border-radius: 10px;
+}
