@@ -82,6 +82,6 @@ in
     pkgs.obs-studio
     pkgs.quickshell
     pkgs.libnotify
-    pkgs.kdenlive
+    pkgs.kdePackages.kdenlive
   ];
 }
