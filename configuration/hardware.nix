@@ -13,7 +13,7 @@
 
   fileSystems."/boot".device = "/dev/disk/by-label/boot";
   fileSystems."/boot".fsType = "vfat";
-  fileSystems."/boot".option = [ "fmask=0022" "dmask=0022" ];
+  fileSystems."/boot".options = [ "fmask=0022" "dmask=0022" ];
 
   fileSystems."/media/drive".device = "/dev/disk/by-uuid/facf5a78-8872-437c-4345-50a28c894aca";
   fileSystems."/media/drive".fsType = "btrfs";

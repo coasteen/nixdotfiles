@@ -62,6 +62,7 @@
   programs.neovim.viAlias = true;
   programs.neovim.vimAlias = true;
   programs.steam.enable = true;
+  programs.git.enable = true;
 
   virtualisation.waydroid.enable = true;
   virtualisation.waydroid.package = pkgs.waydroid-nftables;
