@@ -15,7 +15,7 @@ in
     ./managed/waybar/default.nix
     ./managed/discord/default.nix
     ./managed/git/default.nix
-    ./desktopEntry/prismlauncher.nix
+    ./managed/prismlauncher/prismlauncher.nix
   ];
   home.username = "coast";
   home.homeDirectory = "/home/coast";
