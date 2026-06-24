@@ -11,7 +11,12 @@ let
   };
 in
 {
-  imports = [ ./managed/waybar/default.nix ./managed/discord/default.nix ./managed/git/default.nix ];
+  imports = [
+    ./managed/waybar/default.nix
+    ./managed/discord/default.nix
+    ./managed/git/default.nix
+    ./desktopEntry/prismlauncher.nix
+  ];
   home.username = "coast";
   home.homeDirectory = "/home/coast";
   home.stateVersion = "26.05";
@@ -28,7 +33,6 @@ in
   gtk.cursorTheme.name = "Adwaita Cursor Theme";
   qt.enable = true;
   qt.kvantum.enable = true;
-  #qt.kvantum.settings.General.theme = "KvAdapta";
   qt.kvantum.themes = [
     pkgs.gruvbox-kvantum
     pkgs.catppuccin-kvantum
@@ -83,5 +87,6 @@ in
     pkgs.quickshell
     pkgs.libnotify
     pkgs.kdePackages.kdenlive
+    pkgs.obs-cmd
   ];
 }

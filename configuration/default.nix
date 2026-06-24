@@ -81,7 +81,7 @@
   ];
 
   users.users.coast.isNormalUser = true;
-  users.users.coast.extraGroups = [ "wheel" "docker" ];
+  users.users.coast.extraGroups = [ "wheel" "docker" "input" "video" "audio" "usb" ];
   users.users.coast.shell = pkgs.zsh;
 
   fonts.packages = builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
