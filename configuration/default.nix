@@ -1,6 +1,9 @@
 { lib, pkgs, ... }: {
 
-  imports = [ ./hardware.nix ];
+  imports = [
+    ./hardware.nix
+    ./services/jellyfin
+  ];
 
   nixpkgs.overlays = [
     (final: prev: {
@@ -48,9 +51,6 @@
   programs.niri.package = pkgs.niri;
   programs.hyprland.enable = true;
   programs.hyprland.package = pkgs.hyprland;
-  programs.zsh.enable = true;
-  programs.zsh.autosuggestions.enable = true;
-  programs.zsh.syntaxHighlighting.enable = true;
   programs.nano.enable = false;
   programs.firefox.enable = true;
   programs.throne.enable = true;
@@ -63,6 +63,18 @@
   programs.neovim.vimAlias = true;
   programs.steam.enable = true;
   programs.git.enable = true;
+  programs.zsh.enable = true;
+  programs.zsh.autosuggestions.enable = true;
+  programs.zsh.interactiveShellInit = ''
+    zmodload zsh/zprof
+    autoload -Uz compinit
+    if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+    	compinit
+    else
+    	compinit -C
+    fi
+    source ${pkgs.zsh-fast-syntax-highlighting}/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+  '';
 
   virtualisation.waydroid.enable = true;
   virtualisation.waydroid.package = pkgs.waydroid-nftables;
