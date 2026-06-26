@@ -88,5 +88,6 @@ in
     pkgs.libnotify
     pkgs.kdePackages.kdenlive
     pkgs.obs-cmd
+    pkgs.gedit
   ];
 }

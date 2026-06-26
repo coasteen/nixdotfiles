@@ -2,7 +2,7 @@
 
   imports = [
     ./hardware.nix
-    ./services/jellyfin
+    ./services/jellyfin/jellyfin.nix
   ];
 
   nixpkgs.overlays = [
