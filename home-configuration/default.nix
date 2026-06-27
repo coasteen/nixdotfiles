@@ -16,6 +16,7 @@ in
     ./managed/discord/default.nix
     ./managed/git/default.nix
     ./managed/prismlauncher/prismlauncher.nix
+    ./managed/obs-studio
   ];
   home.username = "coast";
   home.homeDirectory = "/home/coast";
