@@ -1,25 +1,22 @@
 const colors = {
 	bg: "#1a1b26",
-	bgDark: "#16161e",
-	fg: "#a9b1d6",
+	bgDark: "#16161a",
+	fg: "#cdd6f4",
 	muted: "#444b6a",
-	cyan: "#0db9d7",
-	purple: "#ad8ee6",
-	red: "#f7768e",
+	cyan: "#d3869b",
+	purple: "#cba6f7",
+	red: "#f38ba8",
 	yellow: "#e0af68",
-	blue: "#7aa2f7",
+	blue: "#89b4fa",
 }
-
 const bar = {
-	fontFamily: "Iosevka Nerd Font Propo",
-	fontSize: 16,
-	height: 30,
+	fontFamily: "Iosevka Nerd Font",
+	fontSize: 14,
+	height: 44,
 }
-
 const notifications = {
 	timeout: 5000,
 }
-
 const wallpaper = {
 	wallpaper: "file:///home/coast/Wallpapers/nature2art.png"
 }

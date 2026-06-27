@@ -46,11 +46,10 @@
   services.flatpak.enable = true;
   services.openssh.enable = true;
 
+  xdg.portal.enable = true;
   programs.niri.enable = true;
   programs.niri.useNautilus = true;
   programs.niri.package = pkgs.niri;
-  programs.hyprland.enable = true;
-  programs.hyprland.package = pkgs.hyprland;
   programs.nano.enable = false;
   programs.firefox.enable = true;
   programs.throne.enable = true;

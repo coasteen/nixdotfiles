@@ -27,16 +27,24 @@ in
       recursive = true;
     })
     configs;
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
   gtk.enable = true;
-  gtk.colorScheme = "dark";
-  gtk.cursorTheme.package = pkgs.adwaita-icon-theme;
-  gtk.cursorTheme.name = "Adwaita Cursor Theme";
+  systemd.user.sessionVariables = config.home.sessionVariables;
   qt.enable = true;
   qt.kvantum.enable = true;
   qt.kvantum.themes = [
     pkgs.gruvbox-kvantum
     pkgs.catppuccin-kvantum
   ];
+
+
+
   home.packages = [
     pkgs.python3
     pkgs.starship
@@ -46,13 +54,13 @@ in
     pkgs.awww
     pkgs.xwayland-satellite
     pkgs.telegram-desktop
-    pkgs.tauon
     pkgs.mpv
     pkgs.jdk25
     pkgs.nil
     pkgs.nixpkgs-fmt
     pkgs.qbittorrent
     pkgs.nautilus
+    pkgs.caja
     pkgs.xray
     pkgs.git
     pkgs.gnumake
@@ -83,11 +91,12 @@ in
     pkgs.gamescope
     pkgs.xkill
     pkgs.trayer
-    pkgs.obs-studio
     pkgs.quickshell
     pkgs.libnotify
     pkgs.kdePackages.kdenlive
     pkgs.obs-cmd
     pkgs.gedit
+    pkgs.feishin
+    pkgs.gnome-themes-extra
   ];
 }

@@ -1,6 +1,8 @@
 spawn-at-startup "waybar"
 spawn-at-startup "awww-daemon"
 spawn-at-startup "awww" "img" "/home/coast/Wallpapers/nature2art.png"
+spawn-sh-at-startup "XDG_DATA_DIRS=/etc/profiles/per-user/coast/share:/run/current-system/sw/share:$HOME/.nix-profile/share:$XDG_DATA_DIRS rofi -show drun -config ~/.config/rofi/config.rasi"
+
 input {
 	mod-key "Super"
     keyboard {
@@ -233,8 +235,7 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     Mod+Shift+F { toggle-column-tabbed-display; }
-    Mod+F hotkey-overlay-title="Spawn file manager (nautilus)" { spawn "nautilus"; }
-
+    Mod+F hotkey-overlay-title="Spawn file manager (caja)" { spawn-sh "XDG_DATA_DIRS=/etc/profiles/per-user/coast/share:/run/current-system/sw/share:$HOME/.nix-profile/share:$XDG_DATA_DIRS caja"; }
     Print { screenshot; }
     Super+Shift+S { screenshot; }
     Control+Alt+S { screenshot-window; }
