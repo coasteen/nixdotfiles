@@ -12,10 +12,10 @@ let
 in
 {
   imports = [
-    ./managed/waybar/default.nix
-    ./managed/discord/default.nix
-    ./managed/git/default.nix
-    ./managed/prismlauncher/prismlauncher.nix
+    ./managed/waybar
+    ./managed/discord
+    ./managed/git
+    ./managed/prismlauncher
     ./managed/obs-studio
   ];
   home.username = "coast";
