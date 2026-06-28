@@ -5,7 +5,7 @@
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelParams = [ "kvm-amd" "amdgpu.ppfeaturemask=0xffffffff" ];
+  boot.kernelParams = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/".device = "/dev/disk/by-label/nixos";

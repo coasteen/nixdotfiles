@@ -2,7 +2,8 @@
 
   imports = [
     ./hardware.nix
-    ./services/jellyfin/jellyfin.nix
+    ./services/jellyfin
+    ./desktop
   ];
 
   nixpkgs.overlays = [
@@ -34,11 +35,6 @@
 
   time.timeZone = "Asia/Tehran";
 
-  services.xserver.enable = true;
-  services.xserver.xkb.layout = "us";
-  services.xserver.xkb.options = "eurosign:e,caps:escape";
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
   services.printing.enable = false;
   services.pipewire.enable = true;
   services.pipewire.pulse.enable = true;
@@ -47,9 +43,6 @@
   services.openssh.enable = true;
 
   xdg.portal.enable = true;
-  programs.niri.enable = true;
-  programs.niri.useNautilus = true;
-  programs.niri.package = pkgs.niri;
   programs.nano.enable = false;
   programs.firefox.enable = true;
   programs.throne.enable = true;
